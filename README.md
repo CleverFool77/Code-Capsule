@@ -41,3 +41,5 @@ In Desktop Interface, the photo is uploaded directly for code recognition. As in
 * Improve text detection for better accuracy.
 * Provide support for even more languages.
 * Provide the accuracy growth of programmer over the time.
+
+Made with <3 during wmn hackathon 2019.
