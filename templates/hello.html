@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <form id="myform" method="post" enctype="multipart/form-data">
+      <input id="inputfile" type="file" name="file" />
+      <button id="submit" type="button">submit</button>
+    </form>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $("#submit").click(function(e) {
+        e.preventDefault();
+        var filedata = new FormData($('#myform')[0]);
+        console.log(filedata);
+        $.ajax({
+          type: "POST",
+          url: "/upload",
+          data: filedata,
+          contentType: false,
+          cache: false,
+          processData: false,
+          success: function(data) {
+            console.log(data);
+          },
+          error: function(XMLHttpRequest, textStatus, errorThrown) {
+            console.log(XMLHttpRequest, textStatus, errorThrown);
+          },
+        });
+      });
+    </script>
+  </body>
+</html>

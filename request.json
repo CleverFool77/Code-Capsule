@@ -1,0 +1,14 @@
+{
+    "audio": {
+      "content": "/* Your audio */"
+    },
+    "config": {
+      "enableAutomaticPunctuation": true,
+      "encoding": "LINEAR16",
+      "languageCode": "en-US",
+      "model": "default"
+    }
+  }
+
+  curl -s -X POST -H "Content-Type: application/json" --data-binary @request.json \
+"https://speech.googleapis.com/v1/speech:recognize?key=${AIzaSyAhiv9RyoXHJXHpC58uwqBm1nl7C7E7oDs}"
