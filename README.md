@@ -1,10 +1,7 @@
 # Code Capsule
 ![](./static/img/logobg.png)
 
-## Problem Statement
-Currently, there are no services in the market which let you compile and execute your hand-written code directly.
-
-## The Solution
+## Introduction
 * EASE AND SIMPLICITY  
 Code Capsule is a coding tool built with the aim of simplifying your brainstorming-coding experience. As the name suggests Code Capsule compresses the various steps involved in coding from scratch, into a simple 3 click process - Scan. Edit. Run.
 * CONVENIENCE  
